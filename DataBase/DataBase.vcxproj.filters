@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Parsing">
+      <UniqueIdentifier>{b07da1c3-248e-4890-bf4b-eb7f838eaec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{57cadad2-3ad1-4f1b-8c66-b9c17e4e3b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{43a854fa-db0d-410a-8452-49191c896f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{92af23bd-f005-42ba-98b5-fbe71e2dc9cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase\src">
+      <UniqueIdentifier>{372d82a4-9c7b-4c78-b073-c64ddb1b0b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase\include">
+      <UniqueIdentifier>{62274f52-e345-447e-8496-cc93f3f12bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\src">
+      <UniqueIdentifier>{14cda61a-945e-4c94-9908-fc9ef8b45ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\include">
+      <UniqueIdentifier>{5699aa80-9dca-4a2f-9ed3-4911c05b28a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing\include">
+      <UniqueIdentifier>{ea9b027b-fb69-4ea7-ab43-83c4d6da0af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing\src">
+      <UniqueIdentifier>{b53be05b-f48d-4492-add7-fafb29fe449e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Parse.cpp">
+      <Filter>Parsing\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Parse.h">
+      <Filter>Parsing\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
