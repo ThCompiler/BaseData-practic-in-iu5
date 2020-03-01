@@ -15,6 +15,7 @@ namespace csv_format
         std::string _name;
         DB::parsing_type _type;
 
+        Column_header() = default;
         Column_header(std::string name, DB::parsing_type type, size_t id);
         Column_header(std::ifstream& in);
         
@@ -32,16 +33,13 @@ namespace csv_format
         static char _separator;
     };
 
-    std::ifstream& operator>>(std::ifstream& in, Column_header& header);
-
-    std::ofstream& operator<<(std::ofstream& out, Column_header& header);
+    typedef std::vector<std::string> Row;
 
     template<class Column_Header = Column_header>
     class CSV_table 
     {
     public:
         typedef std::unordered_map<std::string, Column_Header> Header;
-        typedef std::vector<std::string> Row;
 
         CSV_table(char separator = '|');
         CSV_table(std::ifstream& in, char separator = '|');
@@ -55,9 +53,13 @@ namespace csv_format
 
         Row& operator[](size_t id);
 
+        const Row& operator[](size_t id) const;
+
+        template<class Column_Header>
         friend
             std::ifstream& operator>>(std::ifstream& in, CSV_table<Column_Header>& table);
 
+        template<class Column_Header>
         friend
             std::ofstream& operator<<(std::ofstream& out, const CSV_table<Column_Header>& table);
 
@@ -86,7 +88,7 @@ namespace csv_format
     }
 
     template<class Column_Header>
-    inline std::unordered_map<std::string, Column_Header> CSV_table<Column_Header>::get_header() const
+    inline typename CSV_table<Column_Header>::Header CSV_table<Column_Header>::get_header() const
     {
         return _columns_header;
     }
@@ -104,7 +106,7 @@ namespace csv_format
     }
 
     template<class Column_Header>
-    inline std::vector<typename CSV_table<Column_Header>::Row> CSV_table<Column_Header>::get_table() const
+    inline std::vector<Row> CSV_table<Column_Header>::get_table() const
     {
         return _date;
     }
@@ -116,7 +118,17 @@ namespace csv_format
     }
 
     template<class Column_Header>
-    inline CSV_table<>::Row& CSV_table<Column_Header>::operator[](size_t id)
+    inline Row& CSV_table<Column_Header>::operator[](size_t id)
+    {
+        if (id >= _date.size())
+        {
+            throw std::out_of_range("End of table");
+        }
+        return _date[id];
+    }
+
+    template<class Column_Header>
+    inline const Row& CSV_table<Column_Header>::operator[](size_t id) const
     {
         if (id >= _date.size())
         {
@@ -177,20 +189,9 @@ namespace csv_format
 
         return str;
     }
+    
 
-    template<class Column_Header>
-    std::ifstream& operator>>(std::ifstream& in, Column_header& header)
-    {
-        header._name = CSV_table<Column_Header>::read_before_separator(in, Column_header::_separator);
-        if ((header._type << CSV_table<Column_Header>::read_before_separator(in, Column_header::_separator))
-            || header._name.size() == 0)
-        {
-            throw;
-        }
-        return in;
-    }
-
-    template<class Column_Header>
+    template<class Column_Header = Column_header>
     std::ifstream& operator>>(std::ifstream& in, CSV_table<Column_Header>& table)
     {
         table._name = CSV_table<>::read_before_separator(in, table._separator);
@@ -198,7 +199,7 @@ namespace csv_format
 
         char ch = '\0';
         size_t id = 0;
-        in >> Column_Header::set_separator(table._separator);
+        Column_Header::set_separator(in, table._separator);
         while (ch != '\n') 
         {
             Column_Header tmp(in);
@@ -215,7 +216,7 @@ namespace csv_format
 
         while (in.get(ch)) {
             in.putback(ch);
-            CSV_table<>::Row tmp(table._columns_header.size());
+            Row tmp(table._columns_header.size());
 
             for (size_t i = 0; i < tmp.size(); ++i) {
                 std::string tmp_str = CSV_table<>::read_before_separator(in, table._separator);
@@ -234,7 +235,7 @@ namespace csv_format
         return in;
     }
 
-    template<class Column_Header>
+    template<class Column_Header = Column_header>
     std::ofstream& operator<<(std::ofstream& out, const CSV_table<Column_Header>& table)
     {
         out << table._name << table._separator << table._key << "\n";
@@ -244,8 +245,8 @@ namespace csv_format
 
         for (auto column : table._columns_header) 
         {
-            out << column;
-            columns_id[i] = column._id;
+            out << column.second;
+            columns_id[i] = column.second._id;
 
             if (i + 1 != table._columns_header.size())
             {

@@ -11,8 +11,9 @@ namespace csv_format
 
     inline Column_header::Column_header(std::ifstream& in)
     {
+        _type = DB::parsing_type::NoType;
         in >> *this;
-        _id = 0;
+        _id = 0;   
     }
 
     inline std::istream& Column_header::set_separator(std::istream& in, char separator)
@@ -25,6 +26,17 @@ namespace csv_format
     {
         _separator = separator;
         return out;
+    }
+
+    std::ifstream& operator>>(std::ifstream& in, Column_header& header)
+    {
+        header._name = CSV_table<Column_header>::read_before_separator(in, Column_header::_separator);
+        if ((header._type << CSV_table<Column_header>::read_before_separator(in, Column_header::_separator))
+            || header._name.size() == 0)
+        {
+            throw;
+        }
+        return in;
     }
 
     std::ofstream& operator<<(std::ofstream& out, Column_header& header)
