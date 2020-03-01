@@ -145,10 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSV.h" />
+    <ClInclude Include="DataBase.h" />
     <ClInclude Include="dbmsLib_v1.h" />
     <ClInclude Include="Parse.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="check.txt" />
     <Text Include="Student.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

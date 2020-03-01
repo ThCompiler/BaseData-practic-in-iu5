@@ -56,9 +56,15 @@
     <ClInclude Include="CSV.h">
       <Filter>Libs\include</Filter>
     </ClInclude>
+    <ClInclude Include="DataBase.h">
+      <Filter>DataBase\include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Student.txt">
+      <Filter>Main</Filter>
+    </Text>
+    <Text Include="check.txt">
       <Filter>Main</Filter>
     </Text>
   </ItemGroup>

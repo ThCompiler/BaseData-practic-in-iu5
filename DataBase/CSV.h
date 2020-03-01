@@ -5,7 +5,6 @@
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
-#include "Parse.h"
 
 namespace csv_format 
 {
@@ -13,10 +12,9 @@ namespace csv_format
     {
         size_t _id;
         std::string _name;
-        DB::parsing_type _type;
 
         Column_header() = default;
-        Column_header(std::string name, DB::parsing_type type, size_t id);
+        Column_header(std::string name, size_t id);
         Column_header(std::ifstream& in);
         
         friend
@@ -25,15 +23,15 @@ namespace csv_format
         friend
             std::ofstream& operator<<(std::ofstream& out, Column_header& header);
 
-        static std::istream& set_separator(std::istream& in, char separator = '|');
-
-        static std::ostream& set_separator(std::ostream& out, char separator = '|');
+        static void set_separator(char separator = '|');
 
     private:
         static char _separator;
     };
 
+
     typedef std::vector<std::string> Row;
+
 
     template<class Column_Header = Column_header>
     class CSV_table 
@@ -73,6 +71,8 @@ namespace csv_format
 
         char _separator;
     };
+
+
 
     template<class Column_Header>
     inline CSV_table<Column_Header>::CSV_table(char separator)
@@ -153,6 +153,11 @@ namespace csv_format
 
             if (tmp == separator || tmp == '\n') 
             {
+                if ((isblank(tmp) || tmp == '\n') && str.size() == 0)
+                {
+                    continue;
+                }
+
                 if (!open) 
                 {
                     if (tmp == '\n') {
@@ -179,11 +184,6 @@ namespace csv_format
                 }
             }
 
-            if ((isblank(tmp) || tmp == '\n') && str.size() == 0) 
-            {
-                continue;
-            }
-
             str += tmp;
         }
 
@@ -199,7 +199,7 @@ namespace csv_format
 
         char ch = '\0';
         size_t id = 0;
-        Column_Header::set_separator(in, table._separator);
+        Column_Header::set_separator(table._separator);
         while (ch != '\n') 
         {
             Column_Header tmp(in);
@@ -213,10 +213,9 @@ namespace csv_format
                 in.putback(ch);
             }
         }
-
+        Row tmp(table._columns_header.size());
         while (in.get(ch)) {
             in.putback(ch);
-            Row tmp(table._columns_header.size());
 
             for (size_t i = 0; i < tmp.size(); ++i) {
                 std::string tmp_str = CSV_table<>::read_before_separator(in, table._separator);
@@ -246,9 +245,9 @@ namespace csv_format
         for (auto column : table._columns_header) 
         {
             out << column.second;
-            columns_id[i] = column.second._id;
+            columns_id[i++] = column.second._id;
 
-            if (i + 1 != table._columns_header.size())
+            if (i != table._columns_header.size())
             {
                 out << table._separator;
             }
@@ -257,9 +256,9 @@ namespace csv_format
 
         for (size_t i = 0; i < table._date.size(); ++i) 
         {
-            for (size_t j = 0; j < table._date[i].size(); ++j) 
+            for (size_t j = 0; j < table[i].size(); ++j) 
             {
-                out << table[columns_id[i]][j];
+                out << table[i][columns_id[j]];
                 if (j + 1 != columns_id.size())
                 {
                     out << table._separator;
