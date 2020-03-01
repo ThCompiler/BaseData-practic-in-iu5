@@ -39,10 +39,27 @@
     <ClCompile Include="Parse.cpp">
       <Filter>Parsing\src</Filter>
     </ClCompile>
+    <ClCompile Include="testDB.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CSV.cpp">
+      <Filter>Libs\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Parse.h">
       <Filter>Parsing\include</Filter>
     </ClInclude>
+    <ClInclude Include="dbmsLib_v1.h">
+      <Filter>Libs\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CSV.h">
+      <Filter>Libs\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Student.txt">
+      <Filter>Main</Filter>
+    </Text>
   </ItemGroup>
 </Project>

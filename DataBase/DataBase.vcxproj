@@ -138,11 +138,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CSV.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parse.cpp" />
+    <ClCompile Include="testDB.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CSV.h" />
+    <ClInclude Include="dbmsLib_v1.h" />
     <ClInclude Include="Parse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Student.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

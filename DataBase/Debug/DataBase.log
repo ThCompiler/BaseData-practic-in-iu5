@@ -1,0 +1,6 @@
+﻿  CSV.cpp
+  main.cpp
+  Создание кода...
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_ifstream<char,struct std::char_traits<char> > & __cdecl csv_format::operator>>(class std::basic_ifstream<char,struct std::char_traits<char> > &,class csv_format::CSV_table<struct csv_format::Column_header> &)" (??5csv_format@@YAAAV?$basic_ifstream@DU?$char_traits@D@std@@@std@@AAV12@AAV?$CSV_table@UColumn_header@csv_format@@@0@@Z) в функции _main
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "class std::basic_ofstream<char,struct std::char_traits<char> > & __cdecl csv_format::operator<<(class std::basic_ofstream<char,struct std::char_traits<char> > &,class csv_format::CSV_table<struct csv_format::Column_header> const &)" (??6csv_format@@YAAAV?$basic_ofstream@DU?$char_traits@D@std@@@std@@AAV12@ABV?$CSV_table@UColumn_header@csv_format@@@0@@Z) в функции _main
+C:\Users\vet_v\OneDrive\Рабочий стол\Лабы\Практика\DataBase\Debug\DataBase.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
