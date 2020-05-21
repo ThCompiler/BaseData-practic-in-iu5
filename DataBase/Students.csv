@@ -1,0 +1,8 @@
+Students|StudentID
+StudentID|Int32|9|Group|String|8|Name|String|16
+1|IU5-21|Ivanov
+2|IU5-21|Petrov
+3|IU5-21|Komorov
+4|IU5-23|Stolov
+5|IU5-24|Borov
+6|IU6-23|Kokov

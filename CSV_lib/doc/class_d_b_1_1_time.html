@@ -1,0 +1,900 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CSV_lib: Класс DB::Time</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CSV_lib
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_d_b.html">DB</a></li><li class="navelem"><a class="el" href="class_d_b_1_1_time.html">Time</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_d_b_1_1_time-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс DB::Time</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс харнение даты  
+ <a href="class_d_b_1_1_time.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_time_8h_source.html">Time.h</a>&gt;</code></p>
+
+<p>Базовые классы:<a class="el" href="class_d_b_1_1_parseable.html">DB::Parseable</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a78787c7049b1b6314609dd08b913ea90"><td class="memItemLeft" align="right" valign="top"><a id="a78787c7049b1b6314609dd08b913ea90"></a>
+typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a></td></tr>
+<tr class="memdesc:a78787c7049b1b6314609dd08b913ea90"><td class="mdescLeft">&#160;</td><td class="mdescRight">тип хранения числа лет <br /></td></tr>
+<tr class="separator:a78787c7049b1b6314609dd08b913ea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb28e7d5687bf1a39e37c321b97d08a7"><td class="memItemLeft" align="right" valign="top"><a id="abb28e7d5687bf1a39e37c321b97d08a7"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a></td></tr>
+<tr class="memdesc:abb28e7d5687bf1a39e37c321b97d08a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">тип хранения числа месяцев <br /></td></tr>
+<tr class="separator:abb28e7d5687bf1a39e37c321b97d08a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afffa2e6d15bd2fb2160bfea9750a9ffe"><td class="memItemLeft" align="right" valign="top"><a id="afffa2e6d15bd2fb2160bfea9750a9ffe"></a>
+typedef long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a></td></tr>
+<tr class="memdesc:afffa2e6d15bd2fb2160bfea9750a9ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">тип хранения числа дней <br /></td></tr>
+<tr class="separator:afffa2e6d15bd2fb2160bfea9750a9ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a60cecb316ee7ed7d20186ae1d78b8674"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a60cecb316ee7ed7d20186ae1d78b8674">Time</a> (<a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a> day=10, <a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a> month=9, <a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a> year=2008, char separator='/')</td></tr>
+<tr class="memdesc:a60cecb316ee7ed7d20186ae1d78b8674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Консруктор по-умолчанию  <a href="class_d_b_1_1_time.html#a60cecb316ee7ed7d20186ae1d78b8674">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60cecb316ee7ed7d20186ae1d78b8674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6a75bce6ca3bbe2c75198b624ca48a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a2b6a75bce6ca3bbe2c75198b624ca48a">Time</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a2b6a75bce6ca3bbe2c75198b624ca48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Консруктор создания из строки  <a href="class_d_b_1_1_time.html#a2b6a75bce6ca3bbe2c75198b624ca48a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2b6a75bce6ca3bbe2c75198b624ca48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e6c48ded5c0065aeb5422fa5e068e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#ad1e6c48ded5c0065aeb5422fa5e068e0">days_from_begin_year</a> ()</td></tr>
+<tr class="memdesc:ad1e6c48ded5c0065aeb5422fa5e068e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считает число дней от начала года  <a href="class_d_b_1_1_time.html#ad1e6c48ded5c0065aeb5422fa5e068e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad1e6c48ded5c0065aeb5422fa5e068e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2af33dc4d19d1cf6f4b43f970352088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#af2af33dc4d19d1cf6f4b43f970352088">get_days</a> () const</td></tr>
+<tr class="memdesc:af2af33dc4d19d1cf6f4b43f970352088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет доступ к числу дней  <a href="class_d_b_1_1_time.html#af2af33dc4d19d1cf6f4b43f970352088">Подробнее...</a><br /></td></tr>
+<tr class="separator:af2af33dc4d19d1cf6f4b43f970352088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec18b8529746211e9810c47252866dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#aec18b8529746211e9810c47252866dd9">get_months</a> () const</td></tr>
+<tr class="memdesc:aec18b8529746211e9810c47252866dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет доступ к номеру месяца  <a href="class_d_b_1_1_time.html#aec18b8529746211e9810c47252866dd9">Подробнее...</a><br /></td></tr>
+<tr class="separator:aec18b8529746211e9810c47252866dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130098a30ac28f0b9e2f038e43d8dd60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a130098a30ac28f0b9e2f038e43d8dd60">get_years</a> () const</td></tr>
+<tr class="memdesc:a130098a30ac28f0b9e2f038e43d8dd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Представляет доступ к году  <a href="class_d_b_1_1_time.html#a130098a30ac28f0b9e2f038e43d8dd60">Подробнее...</a><br /></td></tr>
+<tr class="separator:a130098a30ac28f0b9e2f038e43d8dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50eec887519b6a40f2c9dcaee2fcba7a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a50eec887519b6a40f2c9dcaee2fcba7a">operator&lt;&lt;</a> (const std::string &amp;str) final</td></tr>
+<tr class="memdesc:a50eec887519b6a40f2c9dcaee2fcba7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг объекта из строки  <a href="class_d_b_1_1_time.html#a50eec887519b6a40f2c9dcaee2fcba7a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a50eec887519b6a40f2c9dcaee2fcba7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376fabad91ad8b7ec555dbbeaa7d9020"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a376fabad91ad8b7ec555dbbeaa7d9020">operator&gt;&gt;</a> (std::string &amp;str) const final</td></tr>
+<tr class="memdesc:a376fabad91ad8b7ec555dbbeaa7d9020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг объекта в строку  <a href="class_d_b_1_1_time.html#a376fabad91ad8b7ec555dbbeaa7d9020">Подробнее...</a><br /></td></tr>
+<tr class="separator:a376fabad91ad8b7ec555dbbeaa7d9020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc91aab05221a5dc5ff2b5e4608a2bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a5cc91aab05221a5dc5ff2b5e4608a2bc">operator&lt;</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:a5cc91aab05221a5dc5ff2b5e4608a2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор меньше  <a href="class_d_b_1_1_time.html#a5cc91aab05221a5dc5ff2b5e4608a2bc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5cc91aab05221a5dc5ff2b5e4608a2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b1f26a7713af700e7976868424074e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#ae1b1f26a7713af700e7976868424074e">operator&lt;=</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:ae1b1f26a7713af700e7976868424074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор меньше или равно  <a href="class_d_b_1_1_time.html#ae1b1f26a7713af700e7976868424074e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae1b1f26a7713af700e7976868424074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739171ecd8ba7639d703fb714b684c21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a739171ecd8ba7639d703fb714b684c21">operator&gt;</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:a739171ecd8ba7639d703fb714b684c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор больше  <a href="class_d_b_1_1_time.html#a739171ecd8ba7639d703fb714b684c21">Подробнее...</a><br /></td></tr>
+<tr class="separator:a739171ecd8ba7639d703fb714b684c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20972fed9457560b1ee587dc2af949c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a20972fed9457560b1ee587dc2af949c2">operator&gt;=</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:a20972fed9457560b1ee587dc2af949c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор больше или равно  <a href="class_d_b_1_1_time.html#a20972fed9457560b1ee587dc2af949c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a20972fed9457560b1ee587dc2af949c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099607a8cf87779cc6126d0fd127d993"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a099607a8cf87779cc6126d0fd127d993">operator==</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:a099607a8cf87779cc6126d0fd127d993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор равенства  <a href="class_d_b_1_1_time.html#a099607a8cf87779cc6126d0fd127d993">Подробнее...</a><br /></td></tr>
+<tr class="separator:a099607a8cf87779cc6126d0fd127d993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab955911ebf367a71175e27385e3dba73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#ab955911ebf367a71175e27385e3dba73">operator!=</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:ab955911ebf367a71175e27385e3dba73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор не равенства  <a href="class_d_b_1_1_time.html#ab955911ebf367a71175e27385e3dba73">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab955911ebf367a71175e27385e3dba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58aadc55331f75006fccd4226ad3e632"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a58aadc55331f75006fccd4226ad3e632">operator+</a> (<a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a> day) const</td></tr>
+<tr class="memdesc:a58aadc55331f75006fccd4226ad3e632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Прибавления дней к дате  <a href="class_d_b_1_1_time.html#a58aadc55331f75006fccd4226ad3e632">Подробнее...</a><br /></td></tr>
+<tr class="separator:a58aadc55331f75006fccd4226ad3e632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc94d5bb9449a145796f925a4e1500c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a9fc94d5bb9449a145796f925a4e1500c">operator+=</a> (<a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a> day)</td></tr>
+<tr class="memdesc:a9fc94d5bb9449a145796f925a4e1500c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличения даты на число ней  <a href="class_d_b_1_1_time.html#a9fc94d5bb9449a145796f925a4e1500c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9fc94d5bb9449a145796f925a4e1500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97a1ee4e7b21d62b477d103d175819d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#aa97a1ee4e7b21d62b477d103d175819d">operator-</a> (<a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a> day) const</td></tr>
+<tr class="memdesc:aa97a1ee4e7b21d62b477d103d175819d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычитание из даты некоторого числа дней  <a href="class_d_b_1_1_time.html#aa97a1ee4e7b21d62b477d103d175819d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa97a1ee4e7b21d62b477d103d175819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3328bf96b96a07fb0978a07e65dab2a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a3328bf96b96a07fb0978a07e65dab2a8">operator-=</a> (<a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a> day)</td></tr>
+<tr class="memdesc:a3328bf96b96a07fb0978a07e65dab2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Уменьшение даты на число ней  <a href="class_d_b_1_1_time.html#a3328bf96b96a07fb0978a07e65dab2a8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3328bf96b96a07fb0978a07e65dab2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a96ed17b26ebf9766260174a3fc806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a89a96ed17b26ebf9766260174a3fc806">operator-</a> (const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time) const</td></tr>
+<tr class="memdesc:a89a96ed17b26ebf9766260174a3fc806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разница между двумя датами в днях  <a href="class_d_b_1_1_time.html#a89a96ed17b26ebf9766260174a3fc806">Подробнее...</a><br /></td></tr>
+<tr class="separator:a89a96ed17b26ebf9766260174a3fc806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a2e63ddafc34c04a060ac04368caeeccc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a2e63ddafc34c04a060ac04368caeeccc">is_leap_year</a> (<a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a> year)</td></tr>
+<tr class="memdesc:a2e63ddafc34c04a060ac04368caeeccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ПРоверяет является ли год високосный  <a href="class_d_b_1_1_time.html#a2e63ddafc34c04a060ac04368caeeccc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e63ddafc34c04a060ac04368caeeccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dc4db37c79ac3f9979246af7848052"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#ac4dc4db37c79ac3f9979246af7848052">day_in_month</a> (<a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a> month, <a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a> year=1)</td></tr>
+<tr class="memdesc:ac4dc4db37c79ac3f9979246af7848052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает число дней в месяце Если не указывать год, он считается не високосным  <a href="class_d_b_1_1_time.html#ac4dc4db37c79ac3f9979246af7848052">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac4dc4db37c79ac3f9979246af7848052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a4d69812554b753fdbea16ba2708ea15a"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#a4d69812554b753fdbea16ba2708ea15a">operator&gt;&gt;</a> (std::istream &amp;in, <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time)</td></tr>
+<tr class="memdesc:a4d69812554b753fdbea16ba2708ea15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора ввода  <a href="class_d_b_1_1_time.html#a4d69812554b753fdbea16ba2708ea15a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4d69812554b753fdbea16ba2708ea15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd440d01c2aaa123d528091ba926ccd3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_time.html#acd440d01c2aaa123d528091ba926ccd3">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;time)</td></tr>
+<tr class="memdesc:acd440d01c2aaa123d528091ba926ccd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка оператора вывода  <a href="class_d_b_1_1_time.html#acd440d01c2aaa123d528091ba926ccd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:acd440d01c2aaa123d528091ba926ccd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс харнение даты </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a60cecb316ee7ed7d20186ae1d78b8674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cecb316ee7ed7d20186ae1d78b8674">&#9670;&nbsp;</a></span>Time() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::Time::Time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td>
+          <td class="paramname"><em>day</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a>&#160;</td>
+          <td class="paramname"><em>month</em> = <code>9</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a>&#160;</td>
+          <td class="paramname"><em>year</em> = <code>2008</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>separator</em> = <code>'/'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Консруктор по-умолчанию </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">day</td><td>число дней </td></tr>
+    <tr><td class="paramname">month</td><td>номер месяца </td></tr>
+    <tr><td class="paramname">year</td><td>год </td></tr>
+    <tr><td class="paramname">separator</td><td>разделитель между элементами даты </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2b6a75bce6ca3bbe2c75198b624ca48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6a75bce6ca3bbe2c75198b624ca48a">&#9670;&nbsp;</a></span>Time() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::Time::Time </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Консруктор создания из строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>строка с датой </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ac4dc4db37c79ac3f9979246af7848052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dc4db37c79ac3f9979246af7848052">&#9670;&nbsp;</a></span>day_in_month()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Time::Days</a> DB::Time::day_in_month </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Months</a>&#160;</td>
+          <td class="paramname"><em>month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a>&#160;</td>
+          <td class="paramname"><em>year</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает число дней в месяце Если не указывать год, он считается не високосным </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">month</td><td>номер месяца </td></tr>
+    <tr><td class="paramname">year</td><td>год</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>число дней в месяце </dd></dl>
+
+</div>
+</div>
+<a id="ad1e6c48ded5c0065aeb5422fa5e068e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e6c48ded5c0065aeb5422fa5e068e0">&#9670;&nbsp;</a></span>days_from_begin_year()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Time::Days</a> DB::Time::days_from_begin_year </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Считает число дней от начала года </p>
+<dl class="section return"><dt>Возвращает</dt><dd>число дней </dd></dl>
+
+</div>
+</div>
+<a id="af2af33dc4d19d1cf6f4b43f970352088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2af33dc4d19d1cf6f4b43f970352088">&#9670;&nbsp;</a></span>get_days()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Time::Days</a> DB::Time::get_days </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Представляет доступ к числу дней </p>
+<dl class="section return"><dt>Возвращает</dt><dd>число дней </dd></dl>
+
+</div>
+</div>
+<a id="aec18b8529746211e9810c47252866dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec18b8529746211e9810c47252866dd9">&#9670;&nbsp;</a></span>get_months()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#abb28e7d5687bf1a39e37c321b97d08a7">Time::Months</a> DB::Time::get_months </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Представляет доступ к номеру месяца </p>
+<dl class="section return"><dt>Возвращает</dt><dd>номер месяца </dd></dl>
+
+</div>
+</div>
+<a id="a130098a30ac28f0b9e2f038e43d8dd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130098a30ac28f0b9e2f038e43d8dd60">&#9670;&nbsp;</a></span>get_years()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Time::Years</a> DB::Time::get_years </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Представляет доступ к году </p>
+<dl class="section return"><dt>Возвращает</dt><dd>год </dd></dl>
+
+</div>
+</div>
+<a id="a2e63ddafc34c04a060ac04368caeeccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e63ddafc34c04a060ac04368caeeccc">&#9670;&nbsp;</a></span>is_leap_year()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::is_leap_year </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#a78787c7049b1b6314609dd08b913ea90">Years</a>&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ПРоверяет является ли год високосный </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">year</td><td>год</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если год високосный </dd></dl>
+
+</div>
+</div>
+<a id="ab955911ebf367a71175e27385e3dba73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab955911ebf367a71175e27385e3dba73">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор не равенства </p>
+<hr  />
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a58aadc55331f75006fccd4226ad3e632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58aadc55331f75006fccd4226ad3e632">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html">Time</a> DB::Time::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td>
+          <td class="paramname"><em>day</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Прибавления дней к дате </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">day</td><td>число дней</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат прибавления </dd></dl>
+
+</div>
+</div>
+<a id="a9fc94d5bb9449a145796f925a4e1500c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc94d5bb9449a145796f925a4e1500c">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html">Time</a> &amp; DB::Time::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td>
+          <td class="paramname"><em>day</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Увеличения даты на число ней </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">day</td><td>число дней</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат увеличнения </dd></dl>
+
+</div>
+</div>
+<a id="a89a96ed17b26ebf9766260174a3fc806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a96ed17b26ebf9766260174a3fc806">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Time::Days</a> DB::Time::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Разница между двумя датами в днях </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>разница в днях </dd></dl>
+
+</div>
+</div>
+<a id="aa97a1ee4e7b21d62b477d103d175819d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97a1ee4e7b21d62b477d103d175819d">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html">Time</a> DB::Time::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td>
+          <td class="paramname"><em>day</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычитание из даты некоторого числа дней </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">day</td><td>число дней</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат вычитания </dd></dl>
+
+</div>
+</div>
+<a id="a3328bf96b96a07fb0978a07e65dab2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3328bf96b96a07fb0978a07e65dab2a8">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_b_1_1_time.html">Time</a> &amp; DB::Time::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html#afffa2e6d15bd2fb2160bfea9750a9ffe">Days</a>&#160;</td>
+          <td class="paramname"><em>day</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Уменьшение даты на число ней </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">day</td><td>число дней</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат уменьшения </dd></dl>
+
+</div>
+</div>
+<a id="a5cc91aab05221a5dc5ff2b5e4608a2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc91aab05221a5dc5ff2b5e4608a2bc">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор меньше </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a50eec887519b6a40f2c9dcaee2fcba7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50eec887519b6a40f2c9dcaee2fcba7a">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Парсинг объекта из строки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>строка</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>false если парсинг не удался </dd></dl>
+
+<p>Замещает <a class="el" href="class_d_b_1_1_parseable.html#a857834d5fe872d313581a2b9ab75cd41">DB::Parseable</a>.</p>
+
+</div>
+</div>
+<a id="ae1b1f26a7713af700e7976868424074e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b1f26a7713af700e7976868424074e">&#9670;&nbsp;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор меньше или равно </p>
+<hr  />
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a099607a8cf87779cc6126d0fd127d993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099607a8cf87779cc6126d0fd127d993">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор равенства </p>
+<hr  />
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a739171ecd8ba7639d703fb714b684c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739171ecd8ba7639d703fb714b684c21">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор больше </p>
+<hr  />
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a20972fed9457560b1ee587dc2af949c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20972fed9457560b1ee587dc2af949c2">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор больше или равно </p>
+<hr  />
+ <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>объект класса</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат сравнения </dd></dl>
+
+</div>
+</div>
+<a id="a376fabad91ad8b7ec555dbbeaa7d9020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376fabad91ad8b7ec555dbbeaa7d9020">&#9670;&nbsp;</a></span>operator&gt;&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DB::Time::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Парсинг объекта в строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>строка</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>false если парсинг не удался </dd></dl>
+
+<p>Замещает <a class="el" href="class_d_b_1_1_parseable.html#a729518e9ce78cbb02fc4fb8f7e1b2d31">DB::Parseable</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="acd440d01c2aaa123d528091ba926ccd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd440d01c2aaa123d528091ba926ccd3">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора вывода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out</td><td>поток вывода </td></tr>
+    <tr><td class="paramname">time</td><td>выводимый объект класса </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d69812554b753fdbea16ba2708ea15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d69812554b753fdbea16ba2708ea15a">&#9670;&nbsp;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_d_b_1_1_time.html">Time</a> &amp;&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перегрузка оператора ввода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>поток ввода </td></tr>
+    <tr><td class="paramname">time</td><td>вводимый объект класса </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="_time_8h_source.html">Time.h</a></li>
+<li>Time.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

@@ -1,0 +1,3 @@
+C:\Users\vet_v\OneDrive\Рабочий стол\Лабы\Практика\DataBase\x64\Debug\CSV_lib.pdb
+C:\Users\vet_v\OneDrive\Рабочий стол\Лабы\Практика\DataBase\CSV_lib\x64\Debug\CSV_lib.pdb
+C:\Users\vet_v\OneDrive\Рабочий стол\Лабы\Практика\DataBase\DataBase\CSV_lib.pdb

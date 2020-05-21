@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CSV_lib: Файл Parse.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">CSV_lib
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл Parse.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация средств парсинга типов в строку и из строки  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
+</div>
+<p><a href="_parse_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_d_b_1_1_parseable.html">DB::Parseable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс для новых классов для парса данного класса  <a href="class_d_b_1_1_parseable.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespace_d_b"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html">DB</a></td></tr>
+<tr class="memdesc:namespace_d_b"><td class="mdescLeft">&#160;</td><td class="mdescRight">пространство имён классов и функция для задания <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a35c81968566babd9a15a4b8bedd6f2a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0">DB::parsing_type</a> { <br />
+&#160;&#160;<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a9080fd7a5f0af44b585bb21b62d8b283">DB::parsing_type::NoType</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0ab31df9c476d20e85ff898121efe11b5a">DB::parsing_type::UInt8</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a8bd950a9d7779b83f5c30046c9aaf1cf">DB::parsing_type::UInt16</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0ac06129f6e6e15c09328365e553f1dc31">DB::parsing_type::Int32</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a8394f0347c184cf156ac5924dccb773b">DB::parsing_type::Long</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0ab7b9e40856393458f9c69a5e5658f2d7">DB::parsing_type::LLong</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a0b1291eded63143ac04709711274785a">DB::parsing_type::UInt</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a43963b8459ea654be36f373f1a036182">DB::parsing_type::ULong</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0ae2dea07f7cdf6f22ab965947d26db07c">DB::parsing_type::ULLong</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a22ae0e2b89e5e3d477f988cc36d3272b">DB::parsing_type::Float</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0ad909d38d705ce75386dd86e611a82f5b">DB::parsing_type::Double</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0aa6fe44d0a40dce115e0644ed6b380ab4">DB::parsing_type::LDouble</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a27118326006d3829667a400ad23d5d98">DB::parsing_type::String</a>, 
+<a class="el" href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0a44749712dbec183e983dcd78a7736c41">DB::parsing_type::Date</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a35c81968566babd9a15a4b8bedd6f2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Доступные типы хранения данных в таблицы  <a href="namespace_d_b.html#a35c81968566babd9a15a4b8bedd6f2a0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35c81968566babd9a15a4b8bedd6f2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:acf3c1f38c605aef05e428165e664f055"><td class="memItemLeft" align="right" valign="top"><a id="acf3c1f38c605aef05e428165e664f055"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#acf3c1f38c605aef05e428165e664f055">DB::operator&lt;&lt;</a> (parsing_type &amp;type, const std::string &amp;str)</td></tr>
+<tr class="memdesc:acf3c1f38c605aef05e428165e664f055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг типов хранения данных из строки <br /></td></tr>
+<tr class="separator:acf3c1f38c605aef05e428165e664f055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016a1de688cb73a04bb86888999bc078"><td class="memItemLeft" align="right" valign="top"><a id="a016a1de688cb73a04bb86888999bc078"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a016a1de688cb73a04bb86888999bc078">DB::operator&lt;&lt;</a> (uint8_t &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a016a1de688cb73a04bb86888999bc078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint8_t из строки <br /></td></tr>
+<tr class="separator:a016a1de688cb73a04bb86888999bc078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27f4d333edc48174cfef88df288a5dd"><td class="memItemLeft" align="right" valign="top"><a id="ae27f4d333edc48174cfef88df288a5dd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ae27f4d333edc48174cfef88df288a5dd">DB::operator&lt;&lt;</a> (uint16_t &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:ae27f4d333edc48174cfef88df288a5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint16_t из строки <br /></td></tr>
+<tr class="separator:ae27f4d333edc48174cfef88df288a5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ef58b3e77708cd3301a4fb58633d0d"><td class="memItemLeft" align="right" valign="top"><a id="ad8ef58b3e77708cd3301a4fb58633d0d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ad8ef58b3e77708cd3301a4fb58633d0d">DB::operator&lt;&lt;</a> (int &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:ad8ef58b3e77708cd3301a4fb58633d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг int из строки <br /></td></tr>
+<tr class="separator:ad8ef58b3e77708cd3301a4fb58633d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2c2decdaab66dcfe023d9d00c5079e"><td class="memItemLeft" align="right" valign="top"><a id="a8b2c2decdaab66dcfe023d9d00c5079e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a8b2c2decdaab66dcfe023d9d00c5079e">DB::operator&lt;&lt;</a> (long &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a8b2c2decdaab66dcfe023d9d00c5079e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long из строки <br /></td></tr>
+<tr class="separator:a8b2c2decdaab66dcfe023d9d00c5079e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5455cbcf4013a3e4027c42892fbc712e"><td class="memItemLeft" align="right" valign="top"><a id="a5455cbcf4013a3e4027c42892fbc712e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a5455cbcf4013a3e4027c42892fbc712e">DB::operator&lt;&lt;</a> (long long &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a5455cbcf4013a3e4027c42892fbc712e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long long из строки <br /></td></tr>
+<tr class="separator:a5455cbcf4013a3e4027c42892fbc712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb097d279be6a6e352bc28bb31b4f8c"><td class="memItemLeft" align="right" valign="top"><a id="aceb097d279be6a6e352bc28bb31b4f8c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#aceb097d279be6a6e352bc28bb31b4f8c">DB::operator&lt;&lt;</a> (unsigned int &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:aceb097d279be6a6e352bc28bb31b4f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned int из строки <br /></td></tr>
+<tr class="separator:aceb097d279be6a6e352bc28bb31b4f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a775fa8966c4bec39237b9e59fa8b84"><td class="memItemLeft" align="right" valign="top"><a id="a1a775fa8966c4bec39237b9e59fa8b84"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a1a775fa8966c4bec39237b9e59fa8b84">DB::operator&lt;&lt;</a> (unsigned long &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a1a775fa8966c4bec39237b9e59fa8b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long из строки <br /></td></tr>
+<tr class="separator:a1a775fa8966c4bec39237b9e59fa8b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb206a95b6010e88e3bcacfa46b77c"><td class="memItemLeft" align="right" valign="top"><a id="a0afb206a95b6010e88e3bcacfa46b77c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a0afb206a95b6010e88e3bcacfa46b77c">DB::operator&lt;&lt;</a> (unsigned long long &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:a0afb206a95b6010e88e3bcacfa46b77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long long из строки <br /></td></tr>
+<tr class="separator:a0afb206a95b6010e88e3bcacfa46b77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe290076fbc34135b026b47b355b22a"><td class="memItemLeft" align="right" valign="top"><a id="adbe290076fbc34135b026b47b355b22a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#adbe290076fbc34135b026b47b355b22a">DB::operator&lt;&lt;</a> (double &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:adbe290076fbc34135b026b47b355b22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг double из строки <br /></td></tr>
+<tr class="separator:adbe290076fbc34135b026b47b355b22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5658171b13cfca65c4550adb2888340"><td class="memItemLeft" align="right" valign="top"><a id="ae5658171b13cfca65c4550adb2888340"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ae5658171b13cfca65c4550adb2888340">DB::operator&lt;&lt;</a> (long double &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:ae5658171b13cfca65c4550adb2888340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long double из строки <br /></td></tr>
+<tr class="separator:ae5658171b13cfca65c4550adb2888340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9801866f623c49c279717b60663fcba"><td class="memItemLeft" align="right" valign="top"><a id="ae9801866f623c49c279717b60663fcba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ae9801866f623c49c279717b60663fcba">DB::operator&lt;&lt;</a> (float &amp;a, const std::string &amp;str)</td></tr>
+<tr class="memdesc:ae9801866f623c49c279717b60663fcba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг float из строки <br /></td></tr>
+<tr class="separator:ae9801866f623c49c279717b60663fcba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e691b5db9d58d131a16bf8c774f2613"><td class="memItemLeft" align="right" valign="top"><a id="a0e691b5db9d58d131a16bf8c774f2613"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a0e691b5db9d58d131a16bf8c774f2613">DB::operator&gt;&gt;</a> (const uint8_t &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a0e691b5db9d58d131a16bf8c774f2613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint8_t в строки <br /></td></tr>
+<tr class="separator:a0e691b5db9d58d131a16bf8c774f2613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53910efd8352653ea93c171336926532"><td class="memItemLeft" align="right" valign="top"><a id="a53910efd8352653ea93c171336926532"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a53910efd8352653ea93c171336926532">DB::operator&gt;&gt;</a> (const uint16_t &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a53910efd8352653ea93c171336926532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint16_t в строки <br /></td></tr>
+<tr class="separator:a53910efd8352653ea93c171336926532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ae4894b24e75fe41ccbd8901e97c3b"><td class="memItemLeft" align="right" valign="top"><a id="a71ae4894b24e75fe41ccbd8901e97c3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a71ae4894b24e75fe41ccbd8901e97c3b">DB::operator&gt;&gt;</a> (const int &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a71ae4894b24e75fe41ccbd8901e97c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг int в строки <br /></td></tr>
+<tr class="separator:a71ae4894b24e75fe41ccbd8901e97c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944576b3a890a2d7c77b4f1aa87552c9"><td class="memItemLeft" align="right" valign="top"><a id="a944576b3a890a2d7c77b4f1aa87552c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a944576b3a890a2d7c77b4f1aa87552c9">DB::operator&gt;&gt;</a> (const long &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a944576b3a890a2d7c77b4f1aa87552c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long в строки <br /></td></tr>
+<tr class="separator:a944576b3a890a2d7c77b4f1aa87552c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c3a32bdfb3e8937990e5ffb07fec63"><td class="memItemLeft" align="right" valign="top"><a id="a53c3a32bdfb3e8937990e5ffb07fec63"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a53c3a32bdfb3e8937990e5ffb07fec63">DB::operator&gt;&gt;</a> (const long long &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a53c3a32bdfb3e8937990e5ffb07fec63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long long в строки <br /></td></tr>
+<tr class="separator:a53c3a32bdfb3e8937990e5ffb07fec63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fba34c08c74b3c0de9cebb5b596925"><td class="memItemLeft" align="right" valign="top"><a id="ae2fba34c08c74b3c0de9cebb5b596925"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ae2fba34c08c74b3c0de9cebb5b596925">DB::operator&gt;&gt;</a> (const unsigned int &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:ae2fba34c08c74b3c0de9cebb5b596925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned int в строки <br /></td></tr>
+<tr class="separator:ae2fba34c08c74b3c0de9cebb5b596925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8eb5812d587586e210fe70336780fdd"><td class="memItemLeft" align="right" valign="top"><a id="ad8eb5812d587586e210fe70336780fdd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ad8eb5812d587586e210fe70336780fdd">DB::operator&gt;&gt;</a> (const unsigned long &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:ad8eb5812d587586e210fe70336780fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long в строки <br /></td></tr>
+<tr class="separator:ad8eb5812d587586e210fe70336780fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4953fdda592a1999bdfb40ff335a4fd"><td class="memItemLeft" align="right" valign="top"><a id="aa4953fdda592a1999bdfb40ff335a4fd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#aa4953fdda592a1999bdfb40ff335a4fd">DB::operator&gt;&gt;</a> (const unsigned long long &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:aa4953fdda592a1999bdfb40ff335a4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long long в строки <br /></td></tr>
+<tr class="separator:aa4953fdda592a1999bdfb40ff335a4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1b35a0e631e7e9e5646877afe3c974"><td class="memItemLeft" align="right" valign="top"><a id="adc1b35a0e631e7e9e5646877afe3c974"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#adc1b35a0e631e7e9e5646877afe3c974">DB::operator&gt;&gt;</a> (const double &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:adc1b35a0e631e7e9e5646877afe3c974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг double в строки <br /></td></tr>
+<tr class="separator:adc1b35a0e631e7e9e5646877afe3c974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e9fecbfbfe775608a8da369dcc0fdc"><td class="memItemLeft" align="right" valign="top"><a id="a02e9fecbfbfe775608a8da369dcc0fdc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a02e9fecbfbfe775608a8da369dcc0fdc">DB::operator&gt;&gt;</a> (const long double &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a02e9fecbfbfe775608a8da369dcc0fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long double в строки <br /></td></tr>
+<tr class="separator:a02e9fecbfbfe775608a8da369dcc0fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce7dd1e51f033d74320210cec34f568"><td class="memItemLeft" align="right" valign="top"><a id="a8ce7dd1e51f033d74320210cec34f568"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a8ce7dd1e51f033d74320210cec34f568">DB::operator&gt;&gt;</a> (const float &amp;a, std::string &amp;str)</td></tr>
+<tr class="memdesc:a8ce7dd1e51f033d74320210cec34f568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг float в строки <br /></td></tr>
+<tr class="separator:a8ce7dd1e51f033d74320210cec34f568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5be39039d86e2aeeec1c5dcdaf80ce"><td class="memItemLeft" align="right" valign="top"><a id="afb5be39039d86e2aeeec1c5dcdaf80ce"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#afb5be39039d86e2aeeec1c5dcdaf80ce">DB::to_string</a> (const uint8_t &amp;a)</td></tr>
+<tr class="memdesc:afb5be39039d86e2aeeec1c5dcdaf80ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint8_t в строки <br /></td></tr>
+<tr class="separator:afb5be39039d86e2aeeec1c5dcdaf80ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb44009368474c305f4fdd4ba758453"><td class="memItemLeft" align="right" valign="top"><a id="aebb44009368474c305f4fdd4ba758453"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#aebb44009368474c305f4fdd4ba758453">DB::to_string</a> (const uint16_t &amp;a)</td></tr>
+<tr class="memdesc:aebb44009368474c305f4fdd4ba758453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг uint16_t в строки <br /></td></tr>
+<tr class="separator:aebb44009368474c305f4fdd4ba758453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd37f9dc9c9917e9d531d3d89fd9c2a"><td class="memItemLeft" align="right" valign="top"><a id="a0fd37f9dc9c9917e9d531d3d89fd9c2a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a0fd37f9dc9c9917e9d531d3d89fd9c2a">DB::to_string</a> (const int &amp;a)</td></tr>
+<tr class="memdesc:a0fd37f9dc9c9917e9d531d3d89fd9c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг int в строки <br /></td></tr>
+<tr class="separator:a0fd37f9dc9c9917e9d531d3d89fd9c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7322bfdea829182257512ca1b9b78d4"><td class="memItemLeft" align="right" valign="top"><a id="ae7322bfdea829182257512ca1b9b78d4"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#ae7322bfdea829182257512ca1b9b78d4">DB::to_string</a> (const long &amp;a)</td></tr>
+<tr class="memdesc:ae7322bfdea829182257512ca1b9b78d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long в строки <br /></td></tr>
+<tr class="separator:ae7322bfdea829182257512ca1b9b78d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a3cea091b326abcfb105787bce6188"><td class="memItemLeft" align="right" valign="top"><a id="a93a3cea091b326abcfb105787bce6188"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a93a3cea091b326abcfb105787bce6188">DB::to_string</a> (const long long &amp;a)</td></tr>
+<tr class="memdesc:a93a3cea091b326abcfb105787bce6188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long long в строки <br /></td></tr>
+<tr class="separator:a93a3cea091b326abcfb105787bce6188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8d7947081a9405d262efe26fd99c14"><td class="memItemLeft" align="right" valign="top"><a id="aee8d7947081a9405d262efe26fd99c14"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#aee8d7947081a9405d262efe26fd99c14">DB::to_string</a> (const unsigned int &amp;a)</td></tr>
+<tr class="memdesc:aee8d7947081a9405d262efe26fd99c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned int в строки <br /></td></tr>
+<tr class="separator:aee8d7947081a9405d262efe26fd99c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ba4dcee7a7336f1bc2c28fd06ab263"><td class="memItemLeft" align="right" valign="top"><a id="a19ba4dcee7a7336f1bc2c28fd06ab263"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a19ba4dcee7a7336f1bc2c28fd06ab263">DB::to_string</a> (const unsigned long &amp;a)</td></tr>
+<tr class="memdesc:a19ba4dcee7a7336f1bc2c28fd06ab263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long в строки <br /></td></tr>
+<tr class="separator:a19ba4dcee7a7336f1bc2c28fd06ab263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e21ecbd443e1ab6d92096c4fa2f37fe"><td class="memItemLeft" align="right" valign="top"><a id="a9e21ecbd443e1ab6d92096c4fa2f37fe"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a9e21ecbd443e1ab6d92096c4fa2f37fe">DB::to_string</a> (const unsigned long long &amp;a)</td></tr>
+<tr class="memdesc:a9e21ecbd443e1ab6d92096c4fa2f37fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг unsigned long long в строки <br /></td></tr>
+<tr class="separator:a9e21ecbd443e1ab6d92096c4fa2f37fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dadf6419cffc55e324da72741d36331"><td class="memItemLeft" align="right" valign="top"><a id="a2dadf6419cffc55e324da72741d36331"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a2dadf6419cffc55e324da72741d36331">DB::to_string</a> (const double &amp;a)</td></tr>
+<tr class="memdesc:a2dadf6419cffc55e324da72741d36331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг double в строки <br /></td></tr>
+<tr class="separator:a2dadf6419cffc55e324da72741d36331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207d38d8a3e084005682e6097c5b216c"><td class="memItemLeft" align="right" valign="top"><a id="a207d38d8a3e084005682e6097c5b216c"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a207d38d8a3e084005682e6097c5b216c">DB::to_string</a> (const long double &amp;a)</td></tr>
+<tr class="memdesc:a207d38d8a3e084005682e6097c5b216c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг long double в строки <br /></td></tr>
+<tr class="separator:a207d38d8a3e084005682e6097c5b216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f97835686527b9a8d1b97fdbb5645ee"><td class="memItemLeft" align="right" valign="top"><a id="a1f97835686527b9a8d1b97fdbb5645ee"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a1f97835686527b9a8d1b97fdbb5645ee">DB::to_string</a> (const float &amp;a)</td></tr>
+<tr class="memdesc:a1f97835686527b9a8d1b97fdbb5645ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Парсинг float в строки <br /></td></tr>
+<tr class="separator:a1f97835686527b9a8d1b97fdbb5645ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381bf0faf34ee150150d60c076b72b95"><td class="memItemLeft" align="right" valign="top"><a id="a381bf0faf34ee150150d60c076b72b95"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_d_b.html#a381bf0faf34ee150150d60c076b72b95">DB::operator&lt;&lt;</a> (std::ostream &amp;out, const parsing_type &amp;type)</td></tr>
+<tr class="memdesc:a381bf0faf34ee150150d60c076b72b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выввод на экран типов хранения <br /></td></tr>
+<tr class="separator:a381bf0faf34ee150150d60c076b72b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация средств парсинга типов в строку и из строки </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

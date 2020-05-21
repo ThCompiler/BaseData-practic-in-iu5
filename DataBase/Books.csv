@@ -1,0 +1,11 @@
+Books|BookID
+BookID|Int32|8|Title|String|16|SubjectID|Int32|9|Quantity|Long|14|Number|Long|14
+1|Dinamics|1|20|0
+2|Geometry|2|3|2
+3|Integrals|2|4|1
+4|Current|1|1|1
+5|C++|3|500|1
+6|Induction|1|40|2
+7|Basic_math|2|20|1
+8|Python|3|15|1
+9|HTML|3|2|1

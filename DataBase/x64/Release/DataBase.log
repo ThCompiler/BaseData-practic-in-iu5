@@ -1,0 +1,22 @@
+﻿  Library.cpp
+  main.cpp
+CSV_lib.lib(DataBase.obj) : error LNK2038: обнаружено несоответствие для "_ITERATOR_DEBUG_LEVEL": значение "2" не соответствует значению "0" в Library.obj
+CSV_lib.lib(DataBase.obj) : error LNK2038: обнаружено несоответствие для "RuntimeLibrary": значение "MDd_DynamicDebug" не соответствует значению "MD_DynamicRelease" в Library.obj
+CSV_lib.lib(DataBase.obj) : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/OPT:ICF"
+CSV_lib.lib(CSV.obj) : error LNK2038: обнаружено несоответствие для "_ITERATOR_DEBUG_LEVEL": значение "2" не соответствует значению "0" в Library.obj
+CSV_lib.lib(CSV.obj) : error LNK2038: обнаружено несоответствие для "RuntimeLibrary": значение "MDd_DynamicDebug" не соответствует значению "MD_DynamicRelease" в Library.obj
+CSV_lib.lib(Parse.obj) : error LNK2038: обнаружено несоответствие для "_ITERATOR_DEBUG_LEVEL": значение "2" не соответствует значению "0" в Library.obj
+CSV_lib.lib(Parse.obj) : error LNK2038: обнаружено несоответствие для "RuntimeLibrary": значение "MDd_DynamicDebug" не соответствует значению "MD_DynamicRelease" в Library.obj
+CSV_lib.lib(Time.obj) : error LNK2038: обнаружено несоответствие для "_ITERATOR_DEBUG_LEVEL": значение "2" не соответствует значению "0" в Library.obj
+CSV_lib.lib(Time.obj) : error LNK2038: обнаружено несоответствие для "RuntimeLibrary": значение "MDd_DynamicDebug" не соответствует значению "MD_DynamicRelease" в Library.obj
+LINK : warning LNK4098: библиотека по умолчанию "MSVCRTD" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
+CSV_lib.lib(DataBase.obj) : error LNK2001: неразрешенный внешний символ "__imp__invalid_parameter"
+CSV_lib.lib(CSV.obj) : error LNK2001: неразрешенный внешний символ "__imp__invalid_parameter"
+CSV_lib.lib(Parse.obj) : error LNK2001: неразрешенный внешний символ "__imp__invalid_parameter"
+CSV_lib.lib(Time.obj) : error LNK2001: неразрешенный внешний символ "__imp__invalid_parameter"
+CSV_lib.lib(DataBase.obj) : error LNK2001: неразрешенный внешний символ "__imp__calloc_dbg"
+CSV_lib.lib(DataBase.obj) : error LNK2001: неразрешенный внешний символ "__imp__CrtDbgReport"
+CSV_lib.lib(CSV.obj) : error LNK2001: неразрешенный внешний символ "__imp__CrtDbgReport"
+CSV_lib.lib(Parse.obj) : error LNK2001: неразрешенный внешний символ "__imp__CrtDbgReport"
+CSV_lib.lib(Time.obj) : error LNK2001: неразрешенный внешний символ "__imp__CrtDbgReport"
+C:\Users\vet_v\OneDrive\Рабочий стол\Лабы\Практика\DataBase\x64\Release\DataBase.exe : fatal error LNK1120: неразрешенных внешних элементов: 3

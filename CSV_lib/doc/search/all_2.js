@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['column_8',['Column',['../struct_d_b_1_1_column.html',1,'DB::Column'],['../struct_d_b_1_1_column.html#a9aa4825e7d164ce228e808cdf7fa918c',1,'DB::Column::Column()'],['../struct_d_b_1_1_column.html#afa144c0b1903d5d1e32e131ebbdb5df2',1,'DB::Column::Column(std::string name, size_t id, parsing_type type, size_t out_lenght)'],['../struct_d_b_1_1_column.html#acd2ce4312485a4f6f41bf957f2824ca4',1,'DB::Column::Column(std::ifstream &amp;in)']]],
+  ['column_5fheader_9',['Column_header',['../structcsv__format_1_1_column__header.html',1,'csv_format::Column_header'],['../structcsv__format_1_1_column__header.html#a838f2ceb492a835f6fc123047ab15b73',1,'csv_format::Column_header::Column_header()'],['../structcsv__format_1_1_column__header.html#a942eb053cc4e022d7fb1eb812e3f623a',1,'csv_format::Column_header::Column_header(std::string name, size_t id, parsing_type tmp_type=parsing_type::NoType)'],['../structcsv__format_1_1_column__header.html#a94fa569fe1b7c8c9145d966b09069808',1,'csv_format::Column_header::Column_header(std::ifstream &amp;in)']]],
+  ['csv_2eh_10',['CSV.h',['../_c_s_v_8h.html',1,'']]],
+  ['csv_5fformat_11',['csv_format',['../namespacecsv__format.html',1,'']]],
+  ['csv_5ftable_12',['CSV_table',['../classcsv__format_1_1_c_s_v__table.html',1,'csv_format::CSV_table&lt; Elements, Column_Header &gt;'],['../classcsv__format_1_1_c_s_v__table.html#a5f1635c52661b3e1fd1b469ad825916b',1,'csv_format::CSV_table::CSV_table(char separator=&apos;|&apos;)'],['../classcsv__format_1_1_c_s_v__table.html#a7f4a0612373cf6f49ae3ed9a52865a77',1,'csv_format::CSV_table::CSV_table(std::ifstream &amp;in, char separator=&apos;|&apos;)']]],
+  ['csv_5ftable_3c_20element_2c_20column_20_3e_13',['CSV_table&lt; Element, Column &gt;',['../classcsv__format_1_1_c_s_v__table.html',1,'csv_format']]]
+];

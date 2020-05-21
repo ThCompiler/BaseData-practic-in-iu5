@@ -1,4 +1,0 @@
-Students|StudentID
-Group|Name|StudentID
-IU5-21|Ivanov|1
-IU5-21|Petrov|2

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{150d5c1b-407f-4ab1-9f78-2316f2b7f221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b0fcfb33-182b-4a94-8bdb-923c1beba5cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSV.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Parse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CSV.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Parse.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

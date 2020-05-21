@@ -83,10 +83,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -99,6 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,20 +141,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CSV.cpp" />
+    <ClCompile Include="Library.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Parse.cpp" />
-    <ClCompile Include="testDB.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CSV.h" />
     <ClInclude Include="DataBase.h" />
-    <ClInclude Include="dbmsLib_v1.h" />
+    <ClInclude Include="Library.h" />
+    <ClInclude Include="Time.h" />
     <ClInclude Include="Parse.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="check.txt" />
-    <Text Include="Student.txt" />
+    <Library Include="CSV_lib.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Subjects.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Abonements.csv" />
+    <None Include="Books.csv" />
+    <None Include="Students.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
